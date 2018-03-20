@@ -1,0 +1,767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FinagilDS" targetNamespace="http://tempuri.org/FinagilDS.xsd" xmlns:mstns="http://tempuri.org/FinagilDS.xsd" xmlns="http://tempuri.org/FinagilDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=server-raid;Initial Catalog=production;Persist Security Info=True;User ID=User_PRO;Password=User_PRO2015" IsAppSettingsProperty="false" Modifier="Assembly" Name="server-raid.Production.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BC_BuroDatosTableAdapter" GeneratorDataComponentClassName="BC_BuroDatosTableAdapter" Name="BC_BuroDatos" UserDataComponentName="BC_BuroDatosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="server-raid.Production.dbo" DbObjectName="Production.dbo.BC_BuroDatos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[BC_BuroDatos] WHERE (([id] = @Original_id) AND ((@IsNull_RFC = 1 AND [RFC] IS NULL) OR ([RFC] = @Original_RFC)) AND ((@IsNull_Mes = 1 AND [Mes] IS NULL) OR ([Mes] = @Original_Mes)) AND ((@IsNull_BK12_CLEAN = 1 AND [BK12_CLEAN] IS NULL) OR ([BK12_CLEAN] = @Original_BK12_CLEAN)) AND ((@IsNull_BK12_NUM_CRED = 1 AND [BK12_NUM_CRED] IS NULL) OR ([BK12_NUM_CRED] = @Original_BK12_NUM_CRED)) AND ((@IsNull_BK12_NUM_TC_ACT = 1 AND [BK12_NUM_TC_ACT] IS NULL) OR ([BK12_NUM_TC_ACT] = @Original_BK12_NUM_TC_ACT)) AND ((@IsNull_NBK12_NUM_CRED = 1 AND [NBK12_NUM_CRED] IS NULL) OR ([NBK12_NUM_CRED] = @Original_NBK12_NUM_CRED)) AND ((@IsNull_BK12_NUM_EXP_PAIDONTIME = 1 AND [BK12_NUM_EXP_PAIDONTIME] IS NULL) OR ([BK12_NUM_EXP_PAIDONTIME] = @Original_BK12_NUM_EXP_PAIDONTIME)) AND ((@IsNull_BK12_PCT_PROMT = 1 AND [BK12_PCT_PROMT] IS NULL) OR ([BK12_PCT_PROMT] = @Original_BK12_PCT_PROMT)) AND ((@IsNull_NBK12_PCT_PROMT = 1 AND [NBK12_PCT_PROMT] IS NULL) OR ([NBK12_PCT_PROMT] = @Original_NBK12_PCT_PROMT)) AND ((@IsNull_BK12_PCT_SAT = 1 AND [BK12_PCT_SAT] IS NULL) OR ([BK12_PCT_SAT] = @Original_BK12_PCT_SAT)) AND ((@IsNull_NBK12_PCT_SAT = 1 AND [NBK12_PCT_SAT] IS NULL) OR ([NBK12_PCT_SAT] = @Original_NBK12_PCT_SAT)) AND ((@IsNull_BK24_PCT_60PLUS = 1 AND [BK24_PCT_60PLUS] IS NULL) OR ([BK24_PCT_60PLUS] = @Original_BK24_PCT_60PLUS)) AND ((@IsNull_NBK24_PCT_60PLUS = 1 AND [NBK24_PCT_60PLUS] IS NULL) OR ([NBK24_PCT_60PLUS] = @Original_NBK24_PCT_60PLUS)) AND ((@IsNull_NBK12_COMM_PCT_PLUS = 1 AND [NBK12_COMM_PCT_PLUS] IS NULL) OR ([NBK12_COMM_PCT_PLUS] = @Original_NBK12_COMM_PCT_PLUS)) AND ((@IsNull_BK12_PCT_90PLUS = 1 AND [BK12_PCT_90PLUS] IS NULL) OR ([BK12_PCT_90PLUS] = @Original_BK12_PCT_90PLUS)) AND ((@IsNull_BK12_DPD_PROM = 1 AND [BK12_DPD_PROM] IS NULL) OR ([BK12_DPD_PROM] = @Original_BK12_DPD_PROM)) AND ((@IsNull_BK12_IND_QCRA = 1 AND [BK12_IND_QCRA] IS NULL) OR ([BK12_IND_QCRA] = @Original_BK12_IND_QCRA)) AND ((@IsNull_BK12_MAX_CREDIT_AMT = 1 AND [BK12_MAX_CREDIT_AMT] IS NULL) OR ([BK12_MAX_CREDIT_AMT] = @Original_BK12_MAX_CREDIT_AMT)) AND ((@IsNull_MONTHS_ON_FILE_BANKING = 1 AND [MONTHS_ON_FILE_BANKING] IS NULL) OR ([MONTHS_ON_FILE_BANKING] = @Original_MONTHS_ON_FILE_BANKING)) AND ((@IsNull_MONTHS_SINCE_LAST_OPEN_BANKING = 1 AND [MONTHS_SINCE_LAST_OPEN_BANKING] IS NULL) OR ([MONTHS_SINCE_LAST_OPEN_BANKING] = @Original_MONTHS_SINCE_LAST_OPEN_BANKING)) AND ((@IsNull_BK_IND_PMOR = 1 AND [BK_IND_PMOR] IS NULL) OR ([BK_IND_PMOR] = @Original_BK_IND_PMOR)) AND ((@IsNull_BK24_IND_EXP = 1 AND [BK24_IND_EXP] IS NULL) OR ([BK24_IND_EXP] = @Original_BK24_IND_EXP)) AND ((@p3 = 1 AND [12_INST] IS NULL) OR ([12_INST] = @p2)) AND ((@IsNull_BK_DEUDA_TOT = 1 AND [BK_DEUDA_TOT] IS NULL) OR ([BK_DEUDA_TOT] = @Original_BK_DEUDA_TOT)) AND ((@IsNull_BK_DEUDA_CP = 1 AND [BK_DEUDA_CP] IS NULL) OR ([BK_DEUDA_CP] = @Original_BK_DEUDA_CP)) AND ((@IsNull_NBK_DEUDA_TOT = 1 AND [NBK_DEUDA_TOT] IS NULL) OR ([NBK_DEUDA_TOT] = @Original_NBK_DEUDA_TOT)) AND ((@IsNull_NBK_DEUDA_CP = 1 AND [NBK_DEUDA_CP] IS NULL) OR ([NBK_DEUDA_CP] = @Original_NBK_DEUDA_CP)) AND ((@IsNull_DEUDA_TOT = 1 AND [DEUDA_TOT] IS NULL) OR ([DEUDA_TOT] = @Original_DEUDA_TOT)) AND ((@IsNull_DEUDA_TOT_CP = 1 AND [DEUDA_TOT_CP] IS NULL) OR ([DEUDA_TOT_CP] = @Original_DEUDA_TOT_CP)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_id" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_RFC" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_RFC" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Mes" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Mes" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Mes" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Mes" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_CLEAN" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_CLEAN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_CLEAN" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_CLEAN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_NUM_CRED" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_NUM_CRED" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_NUM_CRED" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_NUM_CRED" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_NUM_TC_ACT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_NUM_TC_ACT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_NUM_TC_ACT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_NUM_TC_ACT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NBK12_NUM_CRED" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NBK12_NUM_CRED" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NBK12_NUM_CRED" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_NUM_CRED" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_NUM_EXP_PAIDONTIME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_NUM_EXP_PAIDONTIME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_NUM_EXP_PAIDONTIME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_NUM_EXP_PAIDONTIME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_PCT_PROMT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_PCT_PROMT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_PCT_PROMT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_PCT_PROMT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NBK12_PCT_PROMT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NBK12_PCT_PROMT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NBK12_PCT_PROMT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_PCT_PROMT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_PCT_SAT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_PCT_SAT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_PCT_SAT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_PCT_SAT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NBK12_PCT_SAT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NBK12_PCT_SAT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NBK12_PCT_SAT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_PCT_SAT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK24_PCT_60PLUS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK24_PCT_60PLUS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK24_PCT_60PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK24_PCT_60PLUS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NBK24_PCT_60PLUS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NBK24_PCT_60PLUS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NBK24_PCT_60PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK24_PCT_60PLUS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NBK12_COMM_PCT_PLUS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NBK12_COMM_PCT_PLUS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NBK12_COMM_PCT_PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_COMM_PCT_PLUS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_PCT_90PLUS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_PCT_90PLUS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_PCT_90PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_PCT_90PLUS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_DPD_PROM" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_DPD_PROM" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_DPD_PROM" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_DPD_PROM" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_IND_QCRA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_IND_QCRA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_IND_QCRA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_IND_QCRA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_MAX_CREDIT_AMT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_MAX_CREDIT_AMT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_MAX_CREDIT_AMT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_MAX_CREDIT_AMT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MONTHS_ON_FILE_BANKING" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MONTHS_ON_FILE_BANKING" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MONTHS_ON_FILE_BANKING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MONTHS_ON_FILE_BANKING" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MONTHS_SINCE_LAST_OPEN_BANKING" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MONTHS_SINCE_LAST_OPEN_BANKING" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MONTHS_SINCE_LAST_OPEN_BANKING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MONTHS_SINCE_LAST_OPEN_BANKING" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK_IND_PMOR" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK_IND_PMOR" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK_IND_PMOR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK_IND_PMOR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK24_IND_EXP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK24_IND_EXP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK24_IND_EXP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK24_IND_EXP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="12_INST" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="12_INST" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK_DEUDA_TOT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK_DEUDA_TOT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK_DEUDA_TOT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK_DEUDA_TOT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK_DEUDA_CP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK_DEUDA_CP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK_DEUDA_CP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK_DEUDA_CP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NBK_DEUDA_TOT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NBK_DEUDA_TOT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NBK_DEUDA_TOT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK_DEUDA_TOT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NBK_DEUDA_CP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NBK_DEUDA_CP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NBK_DEUDA_CP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK_DEUDA_CP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DEUDA_TOT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DEUDA_TOT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DEUDA_TOT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DEUDA_TOT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DEUDA_TOT_CP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DEUDA_TOT_CP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DEUDA_TOT_CP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DEUDA_TOT_CP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[BC_BuroDatos] ([RFC], [Mes], [BK12_CLEAN], [BK12_NUM_CRED], [BK12_NUM_TC_ACT], [NBK12_NUM_CRED], [BK12_NUM_EXP_PAIDONTIME], [BK12_PCT_PROMT], [NBK12_PCT_PROMT], [BK12_PCT_SAT], [NBK12_PCT_SAT], [BK24_PCT_60PLUS], [NBK24_PCT_60PLUS], [NBK12_COMM_PCT_PLUS], [BK12_PCT_90PLUS], [BK12_DPD_PROM], [BK12_IND_QCRA], [BK12_MAX_CREDIT_AMT], [MONTHS_ON_FILE_BANKING], [MONTHS_SINCE_LAST_OPEN_BANKING], [BK_IND_PMOR], [BK24_IND_EXP], [12_INST], [BK_DEUDA_TOT], [BK_DEUDA_CP], [NBK_DEUDA_TOT], [NBK_DEUDA_CP], [DEUDA_TOT], [DEUDA_TOT_CP]) VALUES (@RFC, @Mes, @BK12_CLEAN, @BK12_NUM_CRED, @BK12_NUM_TC_ACT, @NBK12_NUM_CRED, @BK12_NUM_EXP_PAIDONTIME, @BK12_PCT_PROMT, @NBK12_PCT_PROMT, @BK12_PCT_SAT, @NBK12_PCT_SAT, @BK24_PCT_60PLUS, @NBK24_PCT_60PLUS, @NBK12_COMM_PCT_PLUS, @BK12_PCT_90PLUS, @BK12_DPD_PROM, @BK12_IND_QCRA, @BK12_MAX_CREDIT_AMT, @MONTHS_ON_FILE_BANKING, @MONTHS_SINCE_LAST_OPEN_BANKING, @BK_IND_PMOR, @BK24_IND_EXP, @p1, @BK_DEUDA_TOT, @BK_DEUDA_CP, @NBK_DEUDA_TOT, @NBK_DEUDA_CP, @DEUDA_TOT, @DEUDA_TOT_CP);
+SELECT id, RFC, Mes, BK12_CLEAN, BK12_NUM_CRED, BK12_NUM_TC_ACT, NBK12_NUM_CRED, BK12_NUM_EXP_PAIDONTIME, BK12_PCT_PROMT, NBK12_PCT_PROMT, BK12_PCT_SAT, NBK12_PCT_SAT, BK24_PCT_60PLUS, NBK24_PCT_60PLUS, NBK12_COMM_PCT_PLUS, BK12_PCT_90PLUS, BK12_DPD_PROM, BK12_IND_QCRA, BK12_MAX_CREDIT_AMT, MONTHS_ON_FILE_BANKING, MONTHS_SINCE_LAST_OPEN_BANKING, BK_IND_PMOR, BK24_IND_EXP, [12_INST], BK_DEUDA_TOT, BK_DEUDA_CP, NBK_DEUDA_TOT, NBK_DEUDA_CP, DEUDA_TOT, DEUDA_TOT_CP FROM BC_BuroDatos WHERE (id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@RFC" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Mes" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Mes" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_CLEAN" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_CLEAN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_NUM_CRED" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_NUM_CRED" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_NUM_TC_ACT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_NUM_TC_ACT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NBK12_NUM_CRED" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_NUM_CRED" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_NUM_EXP_PAIDONTIME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_NUM_EXP_PAIDONTIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_PCT_PROMT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_PCT_PROMT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NBK12_PCT_PROMT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_PCT_PROMT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_PCT_SAT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_PCT_SAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NBK12_PCT_SAT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_PCT_SAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK24_PCT_60PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK24_PCT_60PLUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NBK24_PCT_60PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK24_PCT_60PLUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NBK12_COMM_PCT_PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_COMM_PCT_PLUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_PCT_90PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_PCT_90PLUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_DPD_PROM" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_DPD_PROM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_IND_QCRA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_IND_QCRA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_MAX_CREDIT_AMT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_MAX_CREDIT_AMT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MONTHS_ON_FILE_BANKING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MONTHS_ON_FILE_BANKING" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MONTHS_SINCE_LAST_OPEN_BANKING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MONTHS_SINCE_LAST_OPEN_BANKING" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK_IND_PMOR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK_IND_PMOR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK24_IND_EXP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK24_IND_EXP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="12_INST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK_DEUDA_TOT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK_DEUDA_TOT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK_DEUDA_CP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK_DEUDA_CP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NBK_DEUDA_TOT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK_DEUDA_TOT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NBK_DEUDA_CP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK_DEUDA_CP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DEUDA_TOT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DEUDA_TOT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DEUDA_TOT_CP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DEUDA_TOT_CP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT id, RFC, Mes, BK12_CLEAN, BK12_NUM_CRED, BK12_NUM_TC_ACT, NBK12_NUM_CRED, BK12_NUM_EXP_PAIDONTIME, BK12_PCT_PROMT, NBK12_PCT_PROMT, BK12_PCT_SAT, NBK12_PCT_SAT, BK24_PCT_60PLUS, NBK24_PCT_60PLUS, NBK12_COMM_PCT_PLUS, BK12_PCT_90PLUS, BK12_DPD_PROM, BK12_IND_QCRA, BK12_MAX_CREDIT_AMT, MONTHS_ON_FILE_BANKING, MONTHS_SINCE_LAST_OPEN_BANKING, BK_IND_PMOR, BK24_IND_EXP, [12_INST], BK_DEUDA_TOT, BK_DEUDA_CP, NBK_DEUDA_TOT, NBK_DEUDA_CP, DEUDA_TOT, DEUDA_TOT_CP FROM dbo.BC_BuroDatos</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[BC_BuroDatos] SET [RFC] = @RFC, [Mes] = @Mes, [BK12_CLEAN] = @BK12_CLEAN, [BK12_NUM_CRED] = @BK12_NUM_CRED, [BK12_NUM_TC_ACT] = @BK12_NUM_TC_ACT, [NBK12_NUM_CRED] = @NBK12_NUM_CRED, [BK12_NUM_EXP_PAIDONTIME] = @BK12_NUM_EXP_PAIDONTIME, [BK12_PCT_PROMT] = @BK12_PCT_PROMT, [NBK12_PCT_PROMT] = @NBK12_PCT_PROMT, [BK12_PCT_SAT] = @BK12_PCT_SAT, [NBK12_PCT_SAT] = @NBK12_PCT_SAT, [BK24_PCT_60PLUS] = @BK24_PCT_60PLUS, [NBK24_PCT_60PLUS] = @NBK24_PCT_60PLUS, [NBK12_COMM_PCT_PLUS] = @NBK12_COMM_PCT_PLUS, [BK12_PCT_90PLUS] = @BK12_PCT_90PLUS, [BK12_DPD_PROM] = @BK12_DPD_PROM, [BK12_IND_QCRA] = @BK12_IND_QCRA, [BK12_MAX_CREDIT_AMT] = @BK12_MAX_CREDIT_AMT, [MONTHS_ON_FILE_BANKING] = @MONTHS_ON_FILE_BANKING, [MONTHS_SINCE_LAST_OPEN_BANKING] = @MONTHS_SINCE_LAST_OPEN_BANKING, [BK_IND_PMOR] = @BK_IND_PMOR, [BK24_IND_EXP] = @BK24_IND_EXP, [12_INST] = @p1, [BK_DEUDA_TOT] = @BK_DEUDA_TOT, [BK_DEUDA_CP] = @BK_DEUDA_CP, [NBK_DEUDA_TOT] = @NBK_DEUDA_TOT, [NBK_DEUDA_CP] = @NBK_DEUDA_CP, [DEUDA_TOT] = @DEUDA_TOT, [DEUDA_TOT_CP] = @DEUDA_TOT_CP WHERE (([id] = @Original_id) AND ((@IsNull_RFC = 1 AND [RFC] IS NULL) OR ([RFC] = @Original_RFC)) AND ((@IsNull_Mes = 1 AND [Mes] IS NULL) OR ([Mes] = @Original_Mes)) AND ((@IsNull_BK12_CLEAN = 1 AND [BK12_CLEAN] IS NULL) OR ([BK12_CLEAN] = @Original_BK12_CLEAN)) AND ((@IsNull_BK12_NUM_CRED = 1 AND [BK12_NUM_CRED] IS NULL) OR ([BK12_NUM_CRED] = @Original_BK12_NUM_CRED)) AND ((@IsNull_BK12_NUM_TC_ACT = 1 AND [BK12_NUM_TC_ACT] IS NULL) OR ([BK12_NUM_TC_ACT] = @Original_BK12_NUM_TC_ACT)) AND ((@IsNull_NBK12_NUM_CRED = 1 AND [NBK12_NUM_CRED] IS NULL) OR ([NBK12_NUM_CRED] = @Original_NBK12_NUM_CRED)) AND ((@IsNull_BK12_NUM_EXP_PAIDONTIME = 1 AND [BK12_NUM_EXP_PAIDONTIME] IS NULL) OR ([BK12_NUM_EXP_PAIDONTIME] = @Original_BK12_NUM_EXP_PAIDONTIME)) AND ((@IsNull_BK12_PCT_PROMT = 1 AND [BK12_PCT_PROMT] IS NULL) OR ([BK12_PCT_PROMT] = @Original_BK12_PCT_PROMT)) AND ((@IsNull_NBK12_PCT_PROMT = 1 AND [NBK12_PCT_PROMT] IS NULL) OR ([NBK12_PCT_PROMT] = @Original_NBK12_PCT_PROMT)) AND ((@IsNull_BK12_PCT_SAT = 1 AND [BK12_PCT_SAT] IS NULL) OR ([BK12_PCT_SAT] = @Original_BK12_PCT_SAT)) AND ((@IsNull_NBK12_PCT_SAT = 1 AND [NBK12_PCT_SAT] IS NULL) OR ([NBK12_PCT_SAT] = @Original_NBK12_PCT_SAT)) AND ((@IsNull_BK24_PCT_60PLUS = 1 AND [BK24_PCT_60PLUS] IS NULL) OR ([BK24_PCT_60PLUS] = @Original_BK24_PCT_60PLUS)) AND ((@IsNull_NBK24_PCT_60PLUS = 1 AND [NBK24_PCT_60PLUS] IS NULL) OR ([NBK24_PCT_60PLUS] = @Original_NBK24_PCT_60PLUS)) AND ((@IsNull_NBK12_COMM_PCT_PLUS = 1 AND [NBK12_COMM_PCT_PLUS] IS NULL) OR ([NBK12_COMM_PCT_PLUS] = @Original_NBK12_COMM_PCT_PLUS)) AND ((@IsNull_BK12_PCT_90PLUS = 1 AND [BK12_PCT_90PLUS] IS NULL) OR ([BK12_PCT_90PLUS] = @Original_BK12_PCT_90PLUS)) AND ((@IsNull_BK12_DPD_PROM = 1 AND [BK12_DPD_PROM] IS NULL) OR ([BK12_DPD_PROM] = @Original_BK12_DPD_PROM)) AND ((@IsNull_BK12_IND_QCRA = 1 AND [BK12_IND_QCRA] IS NULL) OR ([BK12_IND_QCRA] = @Original_BK12_IND_QCRA)) AND ((@IsNull_BK12_MAX_CREDIT_AMT = 1 AND [BK12_MAX_CREDIT_AMT] IS NULL) OR ([BK12_MAX_CREDIT_AMT] = @Original_BK12_MAX_CREDIT_AMT)) AND ((@IsNull_MONTHS_ON_FILE_BANKING = 1 AND [MONTHS_ON_FILE_BANKING] IS NULL) OR ([MONTHS_ON_FILE_BANKING] = @Original_MONTHS_ON_FILE_BANKING)) AND ((@IsNull_MONTHS_SINCE_LAST_OPEN_BANKING = 1 AND [MONTHS_SINCE_LAST_OPEN_BANKING] IS NULL) OR ([MONTHS_SINCE_LAST_OPEN_BANKING] = @Original_MONTHS_SINCE_LAST_OPEN_BANKING)) AND ((@IsNull_BK_IND_PMOR = 1 AND [BK_IND_PMOR] IS NULL) OR ([BK_IND_PMOR] = @Original_BK_IND_PMOR)) AND ((@IsNull_BK24_IND_EXP = 1 AND [BK24_IND_EXP] IS NULL) OR ([BK24_IND_EXP] = @Original_BK24_IND_EXP)) AND ((@p3 = 1 AND [12_INST] IS NULL) OR ([12_INST] = @p2)) AND ((@IsNull_BK_DEUDA_TOT = 1 AND [BK_DEUDA_TOT] IS NULL) OR ([BK_DEUDA_TOT] = @Original_BK_DEUDA_TOT)) AND ((@IsNull_BK_DEUDA_CP = 1 AND [BK_DEUDA_CP] IS NULL) OR ([BK_DEUDA_CP] = @Original_BK_DEUDA_CP)) AND ((@IsNull_NBK_DEUDA_TOT = 1 AND [NBK_DEUDA_TOT] IS NULL) OR ([NBK_DEUDA_TOT] = @Original_NBK_DEUDA_TOT)) AND ((@IsNull_NBK_DEUDA_CP = 1 AND [NBK_DEUDA_CP] IS NULL) OR ([NBK_DEUDA_CP] = @Original_NBK_DEUDA_CP)) AND ((@IsNull_DEUDA_TOT = 1 AND [DEUDA_TOT] IS NULL) OR ([DEUDA_TOT] = @Original_DEUDA_TOT)) AND ((@IsNull_DEUDA_TOT_CP = 1 AND [DEUDA_TOT_CP] IS NULL) OR ([DEUDA_TOT_CP] = @Original_DEUDA_TOT_CP)));
+SELECT id, RFC, Mes, BK12_CLEAN, BK12_NUM_CRED, BK12_NUM_TC_ACT, NBK12_NUM_CRED, BK12_NUM_EXP_PAIDONTIME, BK12_PCT_PROMT, NBK12_PCT_PROMT, BK12_PCT_SAT, NBK12_PCT_SAT, BK24_PCT_60PLUS, NBK24_PCT_60PLUS, NBK12_COMM_PCT_PLUS, BK12_PCT_90PLUS, BK12_DPD_PROM, BK12_IND_QCRA, BK12_MAX_CREDIT_AMT, MONTHS_ON_FILE_BANKING, MONTHS_SINCE_LAST_OPEN_BANKING, BK_IND_PMOR, BK24_IND_EXP, [12_INST], BK_DEUDA_TOT, BK_DEUDA_CP, NBK_DEUDA_TOT, NBK_DEUDA_CP, DEUDA_TOT, DEUDA_TOT_CP FROM BC_BuroDatos WHERE (id = @id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@RFC" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Mes" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Mes" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_CLEAN" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_CLEAN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_NUM_CRED" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_NUM_CRED" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_NUM_TC_ACT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_NUM_TC_ACT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NBK12_NUM_CRED" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_NUM_CRED" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_NUM_EXP_PAIDONTIME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_NUM_EXP_PAIDONTIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_PCT_PROMT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_PCT_PROMT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NBK12_PCT_PROMT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_PCT_PROMT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_PCT_SAT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_PCT_SAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NBK12_PCT_SAT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_PCT_SAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK24_PCT_60PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK24_PCT_60PLUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NBK24_PCT_60PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK24_PCT_60PLUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NBK12_COMM_PCT_PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_COMM_PCT_PLUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_PCT_90PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_PCT_90PLUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_DPD_PROM" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_DPD_PROM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_IND_QCRA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_IND_QCRA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK12_MAX_CREDIT_AMT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_MAX_CREDIT_AMT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MONTHS_ON_FILE_BANKING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MONTHS_ON_FILE_BANKING" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MONTHS_SINCE_LAST_OPEN_BANKING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MONTHS_SINCE_LAST_OPEN_BANKING" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK_IND_PMOR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK_IND_PMOR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK24_IND_EXP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK24_IND_EXP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="12_INST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK_DEUDA_TOT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK_DEUDA_TOT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BK_DEUDA_CP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK_DEUDA_CP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NBK_DEUDA_TOT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK_DEUDA_TOT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NBK_DEUDA_CP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK_DEUDA_CP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DEUDA_TOT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DEUDA_TOT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DEUDA_TOT_CP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DEUDA_TOT_CP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_id" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_RFC" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_RFC" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Mes" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Mes" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Mes" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Mes" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_CLEAN" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_CLEAN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_CLEAN" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_CLEAN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_NUM_CRED" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_NUM_CRED" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_NUM_CRED" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_NUM_CRED" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_NUM_TC_ACT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_NUM_TC_ACT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_NUM_TC_ACT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_NUM_TC_ACT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NBK12_NUM_CRED" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NBK12_NUM_CRED" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NBK12_NUM_CRED" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_NUM_CRED" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_NUM_EXP_PAIDONTIME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_NUM_EXP_PAIDONTIME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_NUM_EXP_PAIDONTIME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_NUM_EXP_PAIDONTIME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_PCT_PROMT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_PCT_PROMT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_PCT_PROMT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_PCT_PROMT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NBK12_PCT_PROMT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NBK12_PCT_PROMT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NBK12_PCT_PROMT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_PCT_PROMT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_PCT_SAT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_PCT_SAT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_PCT_SAT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_PCT_SAT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NBK12_PCT_SAT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NBK12_PCT_SAT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NBK12_PCT_SAT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_PCT_SAT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK24_PCT_60PLUS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK24_PCT_60PLUS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK24_PCT_60PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK24_PCT_60PLUS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NBK24_PCT_60PLUS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NBK24_PCT_60PLUS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NBK24_PCT_60PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK24_PCT_60PLUS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NBK12_COMM_PCT_PLUS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NBK12_COMM_PCT_PLUS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NBK12_COMM_PCT_PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK12_COMM_PCT_PLUS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_PCT_90PLUS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_PCT_90PLUS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_PCT_90PLUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_PCT_90PLUS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_DPD_PROM" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_DPD_PROM" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_DPD_PROM" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_DPD_PROM" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_IND_QCRA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_IND_QCRA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_IND_QCRA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_IND_QCRA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK12_MAX_CREDIT_AMT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK12_MAX_CREDIT_AMT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK12_MAX_CREDIT_AMT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK12_MAX_CREDIT_AMT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MONTHS_ON_FILE_BANKING" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MONTHS_ON_FILE_BANKING" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MONTHS_ON_FILE_BANKING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MONTHS_ON_FILE_BANKING" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MONTHS_SINCE_LAST_OPEN_BANKING" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MONTHS_SINCE_LAST_OPEN_BANKING" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MONTHS_SINCE_LAST_OPEN_BANKING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MONTHS_SINCE_LAST_OPEN_BANKING" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK_IND_PMOR" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK_IND_PMOR" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK_IND_PMOR" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK_IND_PMOR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK24_IND_EXP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK24_IND_EXP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK24_IND_EXP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK24_IND_EXP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="12_INST" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="12_INST" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK_DEUDA_TOT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK_DEUDA_TOT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK_DEUDA_TOT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK_DEUDA_TOT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BK_DEUDA_CP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BK_DEUDA_CP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BK_DEUDA_CP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BK_DEUDA_CP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NBK_DEUDA_TOT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NBK_DEUDA_TOT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NBK_DEUDA_TOT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK_DEUDA_TOT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NBK_DEUDA_CP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NBK_DEUDA_CP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NBK_DEUDA_CP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NBK_DEUDA_CP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DEUDA_TOT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DEUDA_TOT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DEUDA_TOT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DEUDA_TOT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DEUDA_TOT_CP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DEUDA_TOT_CP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DEUDA_TOT_CP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DEUDA_TOT_CP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="id" ColumnName="id" DataSourceName="Production.dbo.BC_BuroDatos" DataTypeServer="numeric" DbType="Decimal" Direction="Input" ParameterName="@id" Precision="18" ProviderType="Decimal" Scale="0" Size="9" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="RFC" DataSetColumn="RFC" />
+              <Mapping SourceColumn="Mes" DataSetColumn="Mes" />
+              <Mapping SourceColumn="BK12_CLEAN" DataSetColumn="BK12_CLEAN" />
+              <Mapping SourceColumn="BK12_NUM_CRED" DataSetColumn="BK12_NUM_CRED" />
+              <Mapping SourceColumn="BK12_NUM_TC_ACT" DataSetColumn="BK12_NUM_TC_ACT" />
+              <Mapping SourceColumn="NBK12_NUM_CRED" DataSetColumn="NBK12_NUM_CRED" />
+              <Mapping SourceColumn="BK12_NUM_EXP_PAIDONTIME" DataSetColumn="BK12_NUM_EXP_PAIDONTIME" />
+              <Mapping SourceColumn="BK12_PCT_PROMT" DataSetColumn="BK12_PCT_PROMT" />
+              <Mapping SourceColumn="NBK12_PCT_PROMT" DataSetColumn="NBK12_PCT_PROMT" />
+              <Mapping SourceColumn="NBK12_PCT_SAT" DataSetColumn="NBK12_PCT_SAT" />
+              <Mapping SourceColumn="BK24_PCT_60PLUS" DataSetColumn="BK24_PCT_60PLUS" />
+              <Mapping SourceColumn="NBK24_PCT_60PLUS" DataSetColumn="NBK24_PCT_60PLUS" />
+              <Mapping SourceColumn="NBK12_COMM_PCT_PLUS" DataSetColumn="NBK12_COMM_PCT_PLUS" />
+              <Mapping SourceColumn="BK12_PCT_90PLUS" DataSetColumn="BK12_PCT_90PLUS" />
+              <Mapping SourceColumn="BK12_DPD_PROM" DataSetColumn="BK12_DPD_PROM" />
+              <Mapping SourceColumn="BK12_IND_QCRA" DataSetColumn="BK12_IND_QCRA" />
+              <Mapping SourceColumn="BK12_MAX_CREDIT_AMT" DataSetColumn="BK12_MAX_CREDIT_AMT" />
+              <Mapping SourceColumn="MONTHS_ON_FILE_BANKING" DataSetColumn="MONTHS_ON_FILE_BANKING" />
+              <Mapping SourceColumn="MONTHS_SINCE_LAST_OPEN_BANKING" DataSetColumn="MONTHS_SINCE_LAST_OPEN_BANKING" />
+              <Mapping SourceColumn="BK_IND_PMOR" DataSetColumn="BK_IND_PMOR" />
+              <Mapping SourceColumn="BK24_IND_EXP" DataSetColumn="BK24_IND_EXP" />
+              <Mapping SourceColumn="12_INST" DataSetColumn="12_INST" />
+              <Mapping SourceColumn="BK_DEUDA_TOT" DataSetColumn="BK_DEUDA_TOT" />
+              <Mapping SourceColumn="BK_DEUDA_CP" DataSetColumn="BK_DEUDA_CP" />
+              <Mapping SourceColumn="NBK_DEUDA_TOT" DataSetColumn="NBK_DEUDA_TOT" />
+              <Mapping SourceColumn="NBK_DEUDA_CP" DataSetColumn="NBK_DEUDA_CP" />
+              <Mapping SourceColumn="DEUDA_TOT" DataSetColumn="DEUDA_TOT" />
+              <Mapping SourceColumn="DEUDA_TOT_CP" DataSetColumn="DEUDA_TOT_CP" />
+              <Mapping SourceColumn="BK12_PCT_SAT" DataSetColumn="BK12_PCT_SAT1" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="server-raid.Production.dbo" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="CorrigeCampos" Modifier="Public" Name="CorrigeCampos" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="CorrigeCampos">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>update bc_buroDatos set NBK12_PCT_PROMT = '1' where NBK12_PCT_PROMT ='1.00';
+update bc_buroDatos set NBK12_PCT_PROMT = '0' where NBK12_PCT_PROMT ='0.00';
+update bc_buroDatos set BK12_PCT_SAT = '1' where BK12_PCT_SAT ='1.00';
+update bc_buroDatos set BK12_PCT_SAT = '0' where BK12_PCT_SAT ='0.00';
+update bc_buroDatos set BK12_PCT_90PLUS = '1' where BK12_PCT_90PLUS ='1.00';
+update bc_buroDatos set BK12_PCT_90PLUS = '0' where BK12_PCT_90PLUS ='0.00';
+update bc_buroDatos set BK24_PCT_60PLUS = '1' where BK24_PCT_60PLUS ='1.00';
+update bc_buroDatos set BK24_PCT_60PLUS = '0' where BK24_PCT_60PLUS ='0.00';
+
+
+
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="server-raid.Production.dbo" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteALL" Modifier="Public" Name="DeleteALL" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="DeleteALL">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM BC_BuroDatos
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="server-raid.Production.dbo" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="DeleteRFC" Modifier="Public" Name="DeleteRFC" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="DeleteRFC">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM BC_BuroDatos
+WHERE         (RFC = @RFC)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="RFC" ColumnName="RFC" DataSourceName="Production.dbo.BC_BuroDatos" DataTypeServer="nchar(13)" DbType="String" Direction="Input" ParameterName="@RFC" Precision="0" ProviderType="NChar" Scale="0" Size="13" SourceColumn="RFC" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FIRA_CALTableAdapter" GeneratorDataComponentClassName="FIRA_CALTableAdapter" Name="FIRA_CAL" UserDataComponentName="FIRA_CALTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="server-raid.Production.dbo" DbObjectName="Production.dbo.FIRA_CAL" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [FIRA_CAL] WHERE (([IDCONSULTA] = @Original_IDCONSULTA) AND ((@IsNull_TIPORESPUESTA = 1 AND [TIPORESPUESTA] IS NULL) OR ([TIPORESPUESTA] = @Original_TIPORESPUESTA)) AND ([FOLIO] = @Original_FOLIO) AND ((@IsNull_FECHA_CONSULTA = 1 AND [FECHA_CONSULTA] IS NULL) OR ([FECHA_CONSULTA] = @Original_FECHA_CONSULTA)) AND ((@IsNull_RFC = 1 AND [RFC] IS NULL) OR ([RFC] = @Original_RFC)) AND ((@IsNull_PRIMERNOMBRE = 1 AND [PRIMERNOMBRE] IS NULL) OR ([PRIMERNOMBRE] = @Original_PRIMERNOMBRE)) AND ((@IsNull_SEGUNDONOMBRE = 1 AND [SEGUNDONOMBRE] IS NULL) OR ([SEGUNDONOMBRE] = @Original_SEGUNDONOMBRE)) AND ((@IsNull_APELLIDOPATERNO = 1 AND [APELLIDOPATERNO] IS NULL) OR ([APELLIDOPATERNO] = @Original_APELLIDOPATERNO)) AND ((@IsNull_APELLIDOMATERNO = 1 AND [APELLIDOMATERNO] IS NULL) OR ([APELLIDOMATERNO] = @Original_APELLIDOMATERNO)) AND ([IDCARACTERISTICA] = @Original_IDCARACTERISTICA) AND ((@IsNull_NOMBRECARACTERISTICA = 1 AND [NOMBRECARACTERISTICA] IS NULL) OR ([NOMBRECARACTERISTICA] = @Original_NOMBRECARACTERISTICA)) AND ((@IsNull_VALORCARACTERISTICA = 1 AND [VALORCARACTERISTICA] IS NULL) OR ([VALORCARACTERISTICA] = @Original_VALORCARACTERISTICA)) AND ((@IsNull_ERRORCARACTERISTICA = 1 AND [ERRORCARACTERISTICA] IS NULL) OR ([ERRORCARACTERISTICA] = @Original_ERRORCARACTERISTICA)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_IDCONSULTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IDCONSULTA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TIPORESPUESTA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TIPORESPUESTA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TIPORESPUESTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TIPORESPUESTA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_FOLIO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FOLIO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FECHA_CONSULTA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FECHA_CONSULTA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_FECHA_CONSULTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FECHA_CONSULTA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_RFC" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_RFC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PRIMERNOMBRE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PRIMERNOMBRE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PRIMERNOMBRE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRIMERNOMBRE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEGUNDONOMBRE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEGUNDONOMBRE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SEGUNDONOMBRE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEGUNDONOMBRE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_APELLIDOPATERNO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="APELLIDOPATERNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_APELLIDOPATERNO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="APELLIDOPATERNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_APELLIDOMATERNO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="APELLIDOMATERNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_APELLIDOMATERNO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="APELLIDOMATERNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_IDCARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IDCARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOMBRECARACTERISTICA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOMBRECARACTERISTICA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NOMBRECARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NOMBRECARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_VALORCARACTERISTICA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="VALORCARACTERISTICA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_VALORCARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="VALORCARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ERRORCARACTERISTICA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ERRORCARACTERISTICA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ERRORCARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ERRORCARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [FIRA_CAL] ([IDCONSULTA], [TIPORESPUESTA], [FOLIO], [FECHA_CONSULTA], [RFC], [PRIMERNOMBRE], [SEGUNDONOMBRE], [APELLIDOPATERNO], [APELLIDOMATERNO], [IDCARACTERISTICA], [NOMBRECARACTERISTICA], [VALORCARACTERISTICA], [ERRORCARACTERISTICA]) VALUES (@IDCONSULTA, @TIPORESPUESTA, @FOLIO, @FECHA_CONSULTA, @RFC, @PRIMERNOMBRE, @SEGUNDONOMBRE, @APELLIDOPATERNO, @APELLIDOMATERNO, @IDCARACTERISTICA, @NOMBRECARACTERISTICA, @VALORCARACTERISTICA, @ERRORCARACTERISTICA);
+SELECT IDCONSULTA, TIPORESPUESTA, FOLIO, FECHA_CONSULTA, RFC, PRIMERNOMBRE, SEGUNDONOMBRE, APELLIDOPATERNO, APELLIDOMATERNO, IDCARACTERISTICA, NOMBRECARACTERISTICA, VALORCARACTERISTICA, ERRORCARACTERISTICA FROM FIRA_CAL WHERE (FOLIO = @FOLIO) AND (IDCARACTERISTICA = @IDCARACTERISTICA) AND (IDCONSULTA = @IDCONSULTA)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@IDCONSULTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IDCONSULTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TIPORESPUESTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TIPORESPUESTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@FOLIO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FOLIO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@FECHA_CONSULTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FECHA_CONSULTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@RFC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PRIMERNOMBRE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRIMERNOMBRE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SEGUNDONOMBRE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEGUNDONOMBRE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@APELLIDOPATERNO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="APELLIDOPATERNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@APELLIDOMATERNO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="APELLIDOMATERNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@IDCARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IDCARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NOMBRECARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NOMBRECARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@VALORCARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="VALORCARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ERRORCARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ERRORCARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        IDCONSULTA, TIPORESPUESTA, FOLIO, FECHA_CONSULTA, RFC, PRIMERNOMBRE, SEGUNDONOMBRE, APELLIDOPATERNO, APELLIDOMATERNO, IDCARACTERISTICA, NOMBRECARACTERISTICA, 
+                         VALORCARACTERISTICA, ERRORCARACTERISTICA
+FROM            FIRA_CAL</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [FIRA_CAL] SET [IDCONSULTA] = @IDCONSULTA, [TIPORESPUESTA] = @TIPORESPUESTA, [FOLIO] = @FOLIO, [FECHA_CONSULTA] = @FECHA_CONSULTA, [RFC] = @RFC, [PRIMERNOMBRE] = @PRIMERNOMBRE, [SEGUNDONOMBRE] = @SEGUNDONOMBRE, [APELLIDOPATERNO] = @APELLIDOPATERNO, [APELLIDOMATERNO] = @APELLIDOMATERNO, [IDCARACTERISTICA] = @IDCARACTERISTICA, [NOMBRECARACTERISTICA] = @NOMBRECARACTERISTICA, [VALORCARACTERISTICA] = @VALORCARACTERISTICA, [ERRORCARACTERISTICA] = @ERRORCARACTERISTICA WHERE (([IDCONSULTA] = @Original_IDCONSULTA) AND ((@IsNull_TIPORESPUESTA = 1 AND [TIPORESPUESTA] IS NULL) OR ([TIPORESPUESTA] = @Original_TIPORESPUESTA)) AND ([FOLIO] = @Original_FOLIO) AND ((@IsNull_FECHA_CONSULTA = 1 AND [FECHA_CONSULTA] IS NULL) OR ([FECHA_CONSULTA] = @Original_FECHA_CONSULTA)) AND ((@IsNull_RFC = 1 AND [RFC] IS NULL) OR ([RFC] = @Original_RFC)) AND ((@IsNull_PRIMERNOMBRE = 1 AND [PRIMERNOMBRE] IS NULL) OR ([PRIMERNOMBRE] = @Original_PRIMERNOMBRE)) AND ((@IsNull_SEGUNDONOMBRE = 1 AND [SEGUNDONOMBRE] IS NULL) OR ([SEGUNDONOMBRE] = @Original_SEGUNDONOMBRE)) AND ((@IsNull_APELLIDOPATERNO = 1 AND [APELLIDOPATERNO] IS NULL) OR ([APELLIDOPATERNO] = @Original_APELLIDOPATERNO)) AND ((@IsNull_APELLIDOMATERNO = 1 AND [APELLIDOMATERNO] IS NULL) OR ([APELLIDOMATERNO] = @Original_APELLIDOMATERNO)) AND ([IDCARACTERISTICA] = @Original_IDCARACTERISTICA) AND ((@IsNull_NOMBRECARACTERISTICA = 1 AND [NOMBRECARACTERISTICA] IS NULL) OR ([NOMBRECARACTERISTICA] = @Original_NOMBRECARACTERISTICA)) AND ((@IsNull_VALORCARACTERISTICA = 1 AND [VALORCARACTERISTICA] IS NULL) OR ([VALORCARACTERISTICA] = @Original_VALORCARACTERISTICA)) AND ((@IsNull_ERRORCARACTERISTICA = 1 AND [ERRORCARACTERISTICA] IS NULL) OR ([ERRORCARACTERISTICA] = @Original_ERRORCARACTERISTICA)));
+SELECT IDCONSULTA, TIPORESPUESTA, FOLIO, FECHA_CONSULTA, RFC, PRIMERNOMBRE, SEGUNDONOMBRE, APELLIDOPATERNO, APELLIDOMATERNO, IDCARACTERISTICA, NOMBRECARACTERISTICA, VALORCARACTERISTICA, ERRORCARACTERISTICA FROM FIRA_CAL WHERE (FOLIO = @FOLIO) AND (IDCARACTERISTICA = @IDCARACTERISTICA) AND (IDCONSULTA = @IDCONSULTA)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@IDCONSULTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IDCONSULTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TIPORESPUESTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TIPORESPUESTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@FOLIO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FOLIO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@FECHA_CONSULTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FECHA_CONSULTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@RFC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PRIMERNOMBRE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRIMERNOMBRE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SEGUNDONOMBRE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEGUNDONOMBRE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@APELLIDOPATERNO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="APELLIDOPATERNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@APELLIDOMATERNO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="APELLIDOMATERNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@IDCARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IDCARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NOMBRECARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NOMBRECARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@VALORCARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="VALORCARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ERRORCARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ERRORCARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_IDCONSULTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IDCONSULTA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TIPORESPUESTA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TIPORESPUESTA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TIPORESPUESTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TIPORESPUESTA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_FOLIO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FOLIO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FECHA_CONSULTA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FECHA_CONSULTA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_FECHA_CONSULTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FECHA_CONSULTA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_RFC" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_RFC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PRIMERNOMBRE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PRIMERNOMBRE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PRIMERNOMBRE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRIMERNOMBRE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEGUNDONOMBRE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEGUNDONOMBRE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SEGUNDONOMBRE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SEGUNDONOMBRE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_APELLIDOPATERNO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="APELLIDOPATERNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_APELLIDOPATERNO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="APELLIDOPATERNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_APELLIDOMATERNO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="APELLIDOMATERNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_APELLIDOMATERNO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="APELLIDOMATERNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_IDCARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IDCARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOMBRECARACTERISTICA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOMBRECARACTERISTICA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NOMBRECARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NOMBRECARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_VALORCARACTERISTICA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="VALORCARACTERISTICA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_VALORCARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="VALORCARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ERRORCARACTERISTICA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ERRORCARACTERISTICA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ERRORCARACTERISTICA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ERRORCARACTERISTICA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IDCONSULTA" DataSetColumn="IDCONSULTA" />
+              <Mapping SourceColumn="TIPORESPUESTA" DataSetColumn="TIPORESPUESTA" />
+              <Mapping SourceColumn="FOLIO" DataSetColumn="FOLIO" />
+              <Mapping SourceColumn="FECHA_CONSULTA" DataSetColumn="FECHA_CONSULTA" />
+              <Mapping SourceColumn="RFC" DataSetColumn="RFC" />
+              <Mapping SourceColumn="PRIMERNOMBRE" DataSetColumn="PRIMERNOMBRE" />
+              <Mapping SourceColumn="SEGUNDONOMBRE" DataSetColumn="SEGUNDONOMBRE" />
+              <Mapping SourceColumn="APELLIDOPATERNO" DataSetColumn="APELLIDOPATERNO" />
+              <Mapping SourceColumn="APELLIDOMATERNO" DataSetColumn="APELLIDOMATERNO" />
+              <Mapping SourceColumn="IDCARACTERISTICA" DataSetColumn="IDCARACTERISTICA" />
+              <Mapping SourceColumn="NOMBRECARACTERISTICA" DataSetColumn="NOMBRECARACTERISTICA" />
+              <Mapping SourceColumn="VALORCARACTERISTICA" DataSetColumn="VALORCARACTERISTICA" />
+              <Mapping SourceColumn="ERRORCARACTERISTICA" DataSetColumn="ERRORCARACTERISTICA" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="server-raid.Production.dbo" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteAll" Modifier="Public" Name="DeleteAll" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteAll">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM FIRA_CAL</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="server-raid.Production.dbo" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteRFC" Modifier="Public" Name="DeleteRFC" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="DeleteRFC">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM FIRA_CAL
+WHERE        (RFC = @RFC)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="RFC" ColumnName="RFC" DataSourceName="Production.dbo.FIRA_CAL" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@RFC" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="RFC" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FinagilDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FinagilDS" msprop:Generator_UserDSName="FinagilDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BC_BuroDatos" msprop:Generator_UserTableName="BC_BuroDatos" msprop:Generator_RowEvArgName="BC_BuroDatosRowChangeEvent" msprop:Generator_TableVarName="tableBC_BuroDatos" msprop:Generator_TablePropName="BC_BuroDatos" msprop:Generator_RowDeletingName="BC_BuroDatosRowDeleting" msprop:Generator_RowChangingName="BC_BuroDatosRowChanging" msprop:Generator_RowDeletedName="BC_BuroDatosRowDeleted" msprop:Generator_RowEvHandlerName="BC_BuroDatosRowChangeEventHandler" msprop:Generator_TableClassName="BC_BuroDatosDataTable" msprop:Generator_RowChangedName="BC_BuroDatosRowChanged" msprop:Generator_RowClassName="BC_BuroDatosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:decimal" />
+              <xs:element name="RFC" msprop:Generator_ColumnVarNameInTable="columnRFC" msprop:Generator_ColumnPropNameInRow="RFC" msprop:Generator_ColumnPropNameInTable="RFCColumn" msprop:Generator_UserColumnName="RFC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mes" msprop:Generator_ColumnVarNameInTable="columnMes" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_UserColumnName="Mes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK12_CLEAN" msprop:Generator_ColumnVarNameInTable="columnBK12_CLEAN" msprop:Generator_ColumnPropNameInRow="BK12_CLEAN" msprop:Generator_ColumnPropNameInTable="BK12_CLEANColumn" msprop:Generator_UserColumnName="BK12_CLEAN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK12_NUM_CRED" msprop:Generator_ColumnVarNameInTable="columnBK12_NUM_CRED" msprop:Generator_ColumnPropNameInRow="BK12_NUM_CRED" msprop:Generator_ColumnPropNameInTable="BK12_NUM_CREDColumn" msprop:Generator_UserColumnName="BK12_NUM_CRED" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK12_NUM_TC_ACT" msprop:Generator_ColumnVarNameInTable="columnBK12_NUM_TC_ACT" msprop:Generator_ColumnPropNameInRow="BK12_NUM_TC_ACT" msprop:Generator_ColumnPropNameInTable="BK12_NUM_TC_ACTColumn" msprop:Generator_UserColumnName="BK12_NUM_TC_ACT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NBK12_NUM_CRED" msprop:Generator_ColumnVarNameInTable="columnNBK12_NUM_CRED" msprop:Generator_ColumnPropNameInRow="NBK12_NUM_CRED" msprop:Generator_ColumnPropNameInTable="NBK12_NUM_CREDColumn" msprop:Generator_UserColumnName="NBK12_NUM_CRED" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK12_NUM_EXP_PAIDONTIME" msprop:Generator_ColumnVarNameInTable="columnBK12_NUM_EXP_PAIDONTIME" msprop:Generator_ColumnPropNameInRow="BK12_NUM_EXP_PAIDONTIME" msprop:Generator_ColumnPropNameInTable="BK12_NUM_EXP_PAIDONTIMEColumn" msprop:Generator_UserColumnName="BK12_NUM_EXP_PAIDONTIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK12_PCT_PROMT" msprop:Generator_ColumnVarNameInTable="columnBK12_PCT_PROMT" msprop:Generator_ColumnPropNameInRow="BK12_PCT_PROMT" msprop:Generator_ColumnPropNameInTable="BK12_PCT_PROMTColumn" msprop:Generator_UserColumnName="BK12_PCT_PROMT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NBK12_PCT_PROMT" msprop:Generator_ColumnVarNameInTable="columnNBK12_PCT_PROMT" msprop:Generator_ColumnPropNameInRow="NBK12_PCT_PROMT" msprop:Generator_ColumnPropNameInTable="NBK12_PCT_PROMTColumn" msprop:Generator_UserColumnName="NBK12_PCT_PROMT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK12_PCT_SAT" msprop:Generator_ColumnVarNameInTable="columnBK12_PCT_SAT" msprop:Generator_ColumnPropNameInRow="BK12_PCT_SAT" msprop:Generator_ColumnPropNameInTable="BK12_PCT_SATColumn" msprop:Generator_UserColumnName="BK12_PCT_SAT" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="NBK12_PCT_SAT" msprop:Generator_ColumnVarNameInTable="columnNBK12_PCT_SAT" msprop:Generator_ColumnPropNameInRow="NBK12_PCT_SAT" msprop:Generator_ColumnPropNameInTable="NBK12_PCT_SATColumn" msprop:Generator_UserColumnName="NBK12_PCT_SAT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK24_PCT_60PLUS" msprop:Generator_ColumnVarNameInTable="columnBK24_PCT_60PLUS" msprop:Generator_ColumnPropNameInRow="BK24_PCT_60PLUS" msprop:Generator_ColumnPropNameInTable="BK24_PCT_60PLUSColumn" msprop:Generator_UserColumnName="BK24_PCT_60PLUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NBK24_PCT_60PLUS" msprop:Generator_ColumnVarNameInTable="columnNBK24_PCT_60PLUS" msprop:Generator_ColumnPropNameInRow="NBK24_PCT_60PLUS" msprop:Generator_ColumnPropNameInTable="NBK24_PCT_60PLUSColumn" msprop:Generator_UserColumnName="NBK24_PCT_60PLUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NBK12_COMM_PCT_PLUS" msprop:Generator_ColumnVarNameInTable="columnNBK12_COMM_PCT_PLUS" msprop:Generator_ColumnPropNameInRow="NBK12_COMM_PCT_PLUS" msprop:Generator_ColumnPropNameInTable="NBK12_COMM_PCT_PLUSColumn" msprop:Generator_UserColumnName="NBK12_COMM_PCT_PLUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK12_PCT_90PLUS" msprop:Generator_ColumnVarNameInTable="columnBK12_PCT_90PLUS" msprop:Generator_ColumnPropNameInRow="BK12_PCT_90PLUS" msprop:Generator_ColumnPropNameInTable="BK12_PCT_90PLUSColumn" msprop:Generator_UserColumnName="BK12_PCT_90PLUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK12_DPD_PROM" msprop:Generator_ColumnVarNameInTable="columnBK12_DPD_PROM" msprop:Generator_ColumnPropNameInRow="BK12_DPD_PROM" msprop:Generator_ColumnPropNameInTable="BK12_DPD_PROMColumn" msprop:Generator_UserColumnName="BK12_DPD_PROM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK12_IND_QCRA" msprop:Generator_ColumnVarNameInTable="columnBK12_IND_QCRA" msprop:Generator_ColumnPropNameInRow="BK12_IND_QCRA" msprop:Generator_ColumnPropNameInTable="BK12_IND_QCRAColumn" msprop:Generator_UserColumnName="BK12_IND_QCRA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK12_MAX_CREDIT_AMT" msprop:Generator_ColumnVarNameInTable="columnBK12_MAX_CREDIT_AMT" msprop:Generator_ColumnPropNameInRow="BK12_MAX_CREDIT_AMT" msprop:Generator_ColumnPropNameInTable="BK12_MAX_CREDIT_AMTColumn" msprop:Generator_UserColumnName="BK12_MAX_CREDIT_AMT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MONTHS_ON_FILE_BANKING" msprop:Generator_ColumnVarNameInTable="columnMONTHS_ON_FILE_BANKING" msprop:Generator_ColumnPropNameInRow="MONTHS_ON_FILE_BANKING" msprop:Generator_ColumnPropNameInTable="MONTHS_ON_FILE_BANKINGColumn" msprop:Generator_UserColumnName="MONTHS_ON_FILE_BANKING" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MONTHS_SINCE_LAST_OPEN_BANKING" msprop:Generator_ColumnVarNameInTable="columnMONTHS_SINCE_LAST_OPEN_BANKING" msprop:Generator_ColumnPropNameInRow="MONTHS_SINCE_LAST_OPEN_BANKING" msprop:Generator_ColumnPropNameInTable="MONTHS_SINCE_LAST_OPEN_BANKINGColumn" msprop:Generator_UserColumnName="MONTHS_SINCE_LAST_OPEN_BANKING" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK_IND_PMOR" msprop:Generator_ColumnVarNameInTable="columnBK_IND_PMOR" msprop:Generator_ColumnPropNameInRow="BK_IND_PMOR" msprop:Generator_ColumnPropNameInTable="BK_IND_PMORColumn" msprop:Generator_UserColumnName="BK_IND_PMOR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK24_IND_EXP" msprop:Generator_ColumnVarNameInTable="columnBK24_IND_EXP" msprop:Generator_ColumnPropNameInRow="BK24_IND_EXP" msprop:Generator_ColumnPropNameInTable="BK24_IND_EXPColumn" msprop:Generator_UserColumnName="BK24_IND_EXP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0031_2_INST" msprop:Generator_ColumnVarNameInTable="column12_INST" msprop:Generator_ColumnPropNameInRow="_12_INST" msprop:Generator_ColumnPropNameInTable="_12_INSTColumn" msprop:Generator_UserColumnName="12_INST" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK_DEUDA_TOT" msprop:Generator_ColumnVarNameInTable="columnBK_DEUDA_TOT" msprop:Generator_ColumnPropNameInRow="BK_DEUDA_TOT" msprop:Generator_ColumnPropNameInTable="BK_DEUDA_TOTColumn" msprop:Generator_UserColumnName="BK_DEUDA_TOT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK_DEUDA_CP" msprop:Generator_ColumnVarNameInTable="columnBK_DEUDA_CP" msprop:Generator_ColumnPropNameInRow="BK_DEUDA_CP" msprop:Generator_ColumnPropNameInTable="BK_DEUDA_CPColumn" msprop:Generator_UserColumnName="BK_DEUDA_CP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NBK_DEUDA_TOT" msprop:Generator_ColumnVarNameInTable="columnNBK_DEUDA_TOT" msprop:Generator_ColumnPropNameInRow="NBK_DEUDA_TOT" msprop:Generator_ColumnPropNameInTable="NBK_DEUDA_TOTColumn" msprop:Generator_UserColumnName="NBK_DEUDA_TOT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NBK_DEUDA_CP" msprop:Generator_ColumnVarNameInTable="columnNBK_DEUDA_CP" msprop:Generator_ColumnPropNameInRow="NBK_DEUDA_CP" msprop:Generator_ColumnPropNameInTable="NBK_DEUDA_CPColumn" msprop:Generator_UserColumnName="NBK_DEUDA_CP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEUDA_TOT" msprop:Generator_ColumnVarNameInTable="columnDEUDA_TOT" msprop:Generator_ColumnPropNameInRow="DEUDA_TOT" msprop:Generator_ColumnPropNameInTable="DEUDA_TOTColumn" msprop:Generator_UserColumnName="DEUDA_TOT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEUDA_TOT_CP" msprop:Generator_ColumnVarNameInTable="columnDEUDA_TOT_CP" msprop:Generator_ColumnPropNameInRow="DEUDA_TOT_CP" msprop:Generator_ColumnPropNameInTable="DEUDA_TOT_CPColumn" msprop:Generator_UserColumnName="DEUDA_TOT_CP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BK12_PCT_SAT1" msdata:Caption="BK12_PCT_SAT" msprop:Generator_ColumnVarNameInTable="columnBK12_PCT_SAT1" msprop:Generator_ColumnPropNameInRow="BK12_PCT_SAT1" msprop:Generator_ColumnPropNameInTable="BK12_PCT_SAT1Column" msprop:Generator_UserColumnName="BK12_PCT_SAT1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FIRA_CAL" msprop:Generator_TableClassName="FIRA_CALDataTable" msprop:Generator_TableVarName="tableFIRA_CAL" msprop:Generator_TablePropName="FIRA_CAL" msprop:Generator_RowDeletingName="FIRA_CALRowDeleting" msprop:Generator_RowChangingName="FIRA_CALRowChanging" msprop:Generator_RowEvHandlerName="FIRA_CALRowChangeEventHandler" msprop:Generator_RowDeletedName="FIRA_CALRowDeleted" msprop:Generator_UserTableName="FIRA_CAL" msprop:Generator_RowChangedName="FIRA_CALRowChanged" msprop:Generator_RowEvArgName="FIRA_CALRowChangeEvent" msprop:Generator_RowClassName="FIRA_CALRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IDCONSULTA" msprop:Generator_ColumnVarNameInTable="columnIDCONSULTA" msprop:Generator_ColumnPropNameInRow="IDCONSULTA" msprop:Generator_ColumnPropNameInTable="IDCONSULTAColumn" msprop:Generator_UserColumnName="IDCONSULTA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TIPORESPUESTA" msprop:Generator_ColumnVarNameInTable="columnTIPORESPUESTA" msprop:Generator_ColumnPropNameInRow="TIPORESPUESTA" msprop:Generator_ColumnPropNameInTable="TIPORESPUESTAColumn" msprop:Generator_UserColumnName="TIPORESPUESTA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FOLIO" msprop:Generator_ColumnVarNameInTable="columnFOLIO" msprop:Generator_ColumnPropNameInRow="FOLIO" msprop:Generator_ColumnPropNameInTable="FOLIOColumn" msprop:Generator_UserColumnName="FOLIO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FECHA_CONSULTA" msprop:Generator_ColumnVarNameInTable="columnFECHA_CONSULTA" msprop:Generator_ColumnPropNameInRow="FECHA_CONSULTA" msprop:Generator_ColumnPropNameInTable="FECHA_CONSULTAColumn" msprop:Generator_UserColumnName="FECHA_CONSULTA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFC" msprop:Generator_ColumnVarNameInTable="columnRFC" msprop:Generator_ColumnPropNameInRow="RFC" msprop:Generator_ColumnPropNameInTable="RFCColumn" msprop:Generator_UserColumnName="RFC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRIMERNOMBRE" msprop:Generator_ColumnVarNameInTable="columnPRIMERNOMBRE" msprop:Generator_ColumnPropNameInRow="PRIMERNOMBRE" msprop:Generator_ColumnPropNameInTable="PRIMERNOMBREColumn" msprop:Generator_UserColumnName="PRIMERNOMBRE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEGUNDONOMBRE" msprop:Generator_ColumnVarNameInTable="columnSEGUNDONOMBRE" msprop:Generator_ColumnPropNameInRow="SEGUNDONOMBRE" msprop:Generator_ColumnPropNameInTable="SEGUNDONOMBREColumn" msprop:Generator_UserColumnName="SEGUNDONOMBRE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APELLIDOPATERNO" msprop:Generator_ColumnVarNameInTable="columnAPELLIDOPATERNO" msprop:Generator_ColumnPropNameInRow="APELLIDOPATERNO" msprop:Generator_ColumnPropNameInTable="APELLIDOPATERNOColumn" msprop:Generator_UserColumnName="APELLIDOPATERNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APELLIDOMATERNO" msprop:Generator_ColumnVarNameInTable="columnAPELLIDOMATERNO" msprop:Generator_ColumnPropNameInRow="APELLIDOMATERNO" msprop:Generator_ColumnPropNameInTable="APELLIDOMATERNOColumn" msprop:Generator_UserColumnName="APELLIDOMATERNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IDCARACTERISTICA" msprop:Generator_ColumnVarNameInTable="columnIDCARACTERISTICA" msprop:Generator_ColumnPropNameInRow="IDCARACTERISTICA" msprop:Generator_ColumnPropNameInTable="IDCARACTERISTICAColumn" msprop:Generator_UserColumnName="IDCARACTERISTICA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOMBRECARACTERISTICA" msprop:Generator_ColumnVarNameInTable="columnNOMBRECARACTERISTICA" msprop:Generator_ColumnPropNameInRow="NOMBRECARACTERISTICA" msprop:Generator_ColumnPropNameInTable="NOMBRECARACTERISTICAColumn" msprop:Generator_UserColumnName="NOMBRECARACTERISTICA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VALORCARACTERISTICA" msprop:Generator_ColumnVarNameInTable="columnVALORCARACTERISTICA" msprop:Generator_ColumnPropNameInRow="VALORCARACTERISTICA" msprop:Generator_ColumnPropNameInTable="VALORCARACTERISTICAColumn" msprop:Generator_UserColumnName="VALORCARACTERISTICA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ERRORCARACTERISTICA" msprop:Generator_ColumnVarNameInTable="columnERRORCARACTERISTICA" msprop:Generator_ColumnPropNameInRow="ERRORCARACTERISTICA" msprop:Generator_ColumnPropNameInTable="ERRORCARACTERISTICAColumn" msprop:Generator_UserColumnName="ERRORCARACTERISTICA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BC_BuroDatos" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="FIRA_CAL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FIRA_CAL" />
+      <xs:field xpath="mstns:IDCONSULTA" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,8 +1,8 @@
 ﻿Imports System.IO
 Module Procesar
-    Dim RutaBuro As String = "\\server-nas\BuroCredito\DIC2017\"
-    Dim RutaBuroBackup As String = "\\server-nas\BuroCredito\DIC2017\Backup\"
-    Dim Mes As String = "20171201"
+    Dim RutaBuro As String = "\\server-nas\BuroCredito\MAR2019\"
+    Dim RutaBuroBackup As String = "\\server-nas\BuroCredito\MAR2019\Backup\"
+    Dim Mes As String = "20190301"
     Dim TA As New FinagilDSTableAdapters.BC_BuroDatosTableAdapter
     Dim TF As New FinagilDSTableAdapters.FIRA_CALTableAdapter
 
@@ -22,7 +22,7 @@ Module Procesar
             File.Move(F(i).FullName, RutaBuroBackup & F(i).Name)
         Next
         'PARTE 2++++++++++++++++++++++++++++++++
-        F = D.GetFiles("*.txt")
+            F = D.GetFiles("*.txt")
         For i As Integer = 0 To F.Length - 1
             Console.WriteLine(F(i).CreationTime & " " & F(i).Name)
             LeeArchivo2(F(i).FullName)

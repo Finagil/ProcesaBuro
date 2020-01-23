@@ -1,8 +1,8 @@
 ﻿Imports System.IO
 Module Procesar
-    Dim RutaBuro As String = "\\server-nas\BuroCredito\MAR2019\"
-    Dim RutaBuroBackup As String = "\\server-nas\BuroCredito\MAR2019\Backup\"
-    Dim Mes As String = "20190301"
+    Dim RutaBuro As String = "\\server-nas\BuroCredito\OCT2019\"
+    Dim RutaBuroBackup As String = "\\server-nas\BuroCredito\OCT2019\Backup\"
+    Dim Mes As String = "20191001"
     Dim TA As New FinagilDSTableAdapters.BC_BuroDatosTableAdapter
     Dim TF As New FinagilDSTableAdapters.FIRA_CALTableAdapter
 
